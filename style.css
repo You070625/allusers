@@ -1,0 +1,51 @@
+/* 全局样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 页面背景（添加柔和的背景色）+ 字体 + 居中布局 */
+body {
+  /* 可选背景色：这里用淡蓝灰色，也可以换成 #f0f9ff（浅蓝）、#f8f9fa（浅灰）等 */
+  background-color: #eef2f7;
+  font-family: "微软雅黑", "PingFang SC", sans-serif;
+  padding: 60px;
+  /* 让内容垂直居中 */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 标题样式（如果添加了标题） */
+h1 {
+  color: #2d3748;
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* 链接卡片样式 */
+a {
+  display: inline-block;
+  color: #2d3748;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 14px 30px;
+  margin: 10px 0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  width: 220px; /* 统一卡片宽度 */
+  text-align: center; /* 文字居中 */
+}
+
+/* 鼠标悬浮效果 */
+a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: #2b6cb0;
+  background-color: #f7fafc;
+}
